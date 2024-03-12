@@ -121,3 +121,32 @@ select{
         transform: translateY(0);
     }
 }
+
+
+@media screen and (max-width: 768px) {
+
+    .hero {
+        min-height: 100%;
+        background: linear-gradient(45deg, #030ff0, #951365); /* Add background styling for smaller screens */
+    }
+
+    .hero h1 {
+        font-size: 1.5rem; /* Reduce font size for smaller screens */
+    }
+
+    textarea {
+        width: 100%; /* Make textarea full width on smaller screens */
+        max-width: 100%; /* Ensure textarea doesn't overflow on smaller screens */
+        height: 150px; /* Reduce height for smaller screens */
+    }
+
+    .row {
+        width: 100%; /* Make row full width on smaller screens */
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        gap: 10px; /* Reduce gap between items for smaller screens */
+    }
+
+    select {
+        width: 100%; /* Make select element full width on smaller screens */
+    }
+}
